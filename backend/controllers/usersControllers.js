@@ -28,7 +28,7 @@ module.exports = {
 
   signup: function (req, res) {
     // Paramètres
-    let { email, firstname, lastname, password, confirmPassword, bio } =
+    let { email, firstname, lastname, password,/* confirmPassword,*/ bio } =
       req.body;
     const avatar = "/static/media/fkctWwWEdRrlktfd9elt5.jpg"; // IMAGE DEFAULT
 
@@ -65,11 +65,11 @@ module.exports = {
       });
     }*/
 
-    if (password !== confirmPassword) {
+ /*   if (password !== confirmPassword) {
       return res
         .status(400)
         .json({ error: "vous n'avez pas saisie le même mot de passe" });
-    }
+    }*/
 
     const groupomaniaEmail = email.split("@");
 

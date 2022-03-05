@@ -6,7 +6,7 @@ const SignUpForm = () => {
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
   const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+//  const [confirmPassword, setConfirmPassword] = useState("");
   const [email, setEmail] = useState("");
   const bio = "";
   const handleRegister = async (e) => {
@@ -37,7 +37,7 @@ const SignUpForm = () => {
       firstname,
       lastname,
       password,
-      confirmPassword,
+  //    confirmPassword,
       email,
       bio,
     };
@@ -56,7 +56,7 @@ const SignUpForm = () => {
           firstname,
           lastname,
           password,
-          confirmPassword,
+    //      confirmPassword,
           email,
           bio,
         },
@@ -145,7 +145,7 @@ const SignUpForm = () => {
         />
         <div id="passwordError"></div>
 
-        <label htmlFor="confirmPassword">Confirm Password</label>
+   {/**      <label htmlFor="confirmPassword">Confirm Password</label>
         <input
           className="btnType"
           type="password"
@@ -156,7 +156,7 @@ const SignUpForm = () => {
           placeholder="confirmer le mot de passe"
           required
         />
-        <div className="passwordError"></div>
+        <div className="passwordError"></div>*/}
 
       
 
