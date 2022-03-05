@@ -1,0 +1,59 @@
+   
+  $color-red: #fd2b01;
+  $color-red-white:rgba(230, 43, 6, 1);
+  @mixin add-shadow-black{
+    border-radius: 9px 9px 9px 9px;
+    -webkit-box-shadow: 3px 5px 12px 10px #b4afaf;
+    box-shadow: 3px 5px 12px 10px #b4afaf;
+  }
+    @mixin add-shadow-white{
+      border-radius: 9px 9px 9px 9px;
+      -webkit-box-shadow: 3px 2px 12px 0px #e4d7d7;
+      box-shadow: 3px 2px 12px 0px #e4d7d7;
+      }  
+  
+
+  .btnDeleteAndMofified_FormPost_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 5px;
+        @include add-shadow-black;
+        width: 90%;
+        height: 50px;
+        margin: 12px auto;
+        background-color: aliceblue;
+     
+     /*   & .btn_btnDeletePost {
+         border: solid 2px rgb(167, 163, 163);
+         padding: 0.2em;
+         background-image: linear-gradient(rgba(248, 164, 148, 0.8), rgba(243, 236, 234, 0.2)),
+         url("../images/icon-left-font-long.png" );
+       }
+       & .btn_btnDeletePost:hover {
+          transform: scale(1.1);
+           background-image: linear-gradient(rgba(240, 98, 70, 0.8), rgba(243, 236, 234, 0.2)),
+          url("../images/icon-left-font-long.png" );
+       }
+*/
+      }
+      .btn_btnModifiedPost {
+        border: solid 2px rgb(167, 163, 163);
+        padding: 5px;
+        max-width: 80px;
+        border-radius: 50px;
+        background-image: linear-gradient(rgba(248, 164, 148, 0.8), rgba(243, 236, 234, 0.2)),
+        url("../images/icon-left-font-long.png" );
+        transform: scale(0.8);
+      }
+       .btn_btnModifiedPost:hover {
+         
+          background-image: linear-gradient(rgba(240, 98, 70, 0.8), rgba(243, 236, 234, 0.2)),
+          url("../images/icon-left-font-long.png" );
+          transform: scale(0.9);
+          
+      }
+      
+   
+
+

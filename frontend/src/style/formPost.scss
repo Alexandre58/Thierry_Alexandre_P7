@@ -1,0 +1,114 @@
+$color-red: #fce4df;
+$color-red-white:rgb(247, 235, 233);
+@mixin add-shadow-black{
+  border-radius: 9px 9px 9px 9px;
+  -webkit-box-shadow: 3px 5px 12px 10px #b4afaf;
+  box-shadow: 3px 5px 12px 10px #b4afaf;
+}
+  @mixin add-shadow-white{
+    border-radius: 9px 9px 9px 9px;
+    -webkit-box-shadow: 3px 2px 12px 0px #e4d7d7;
+    box-shadow: 3px 2px 12px 0px #e4d7d7;
+    }  
+
+   //
+   .form_mediaCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    margin-top: 180px !important;
+    padding: 1em;
+    background-color: aliceblue;
+    border-radius: 15px;
+    width: 50%;
+  //  @include add-shadow-black;
+    margin: auto;
+    .p_form_mediaCard {
+      background-image: linear-gradient(rgba(248, 164, 148, 0.8), rgba(243, 236, 234, 0.2)),
+      url("../images/icon-left-font-long.png" );
+      text-align: center;
+      font-size: 1.4em;
+      @include add-shadow-black;
+      padding: 0.5em;
+      width: 88%;
+      margin-bottom: 10px;
+    }
+    .input_title_mediaCard {
+      height: 30px;
+      width: 90%;
+      @include add-shadow-black;
+    }
+    .input_post_mediaCard {
+      width: 90%;
+      min-height: 200px;
+      @include add-shadow-black;
+    }
+    .input_button_mediaCard {
+      margin: 1em;
+      padding: 0.5em;
+      width: 90%;
+      @include add-shadow-black;
+    }
+    .input_button_mediaCard:hover {
+      transform: scale(1.02);
+    }
+  } 
+  @media screen and (max-width:1055px) {
+    .form_mediaCard {
+      margin-top: 150px !important;
+      width: 80%;
+      .p_form_mediaCard {
+        font-size: 1em;
+        padding: 0.3em;
+        width: 88%;
+        margin-bottom: 0px;
+      }
+      .input_title_mediaCard {
+        height: 20px;
+        width: 90%;
+      }
+      .input_post_mediaCard {
+        width: 90%;
+        min-height: 100px;
+      }
+      .input_button_mediaCard {
+        margin: 0em;
+        padding: 0.5em;
+        width: 50%;
+      }
+  }
+}
+  @media screen and (max-width:350px){
+    .form_mediaCard {
+      row-gap: 4px;
+      margin-top: 100px !important;
+      padding: 0.5em;
+      width: 50%;
+     
+      .p_form_mediaCard {
+        font-size: 1em;
+        padding: 0.3em;
+        width: 88%;
+        margin-bottom: 0px;
+      }
+      .input_title_mediaCard {
+        height: 20px;
+        width: 90%;
+     
+      }
+      .input_post_mediaCard {
+        width: 90%;
+        min-height: 100px;
+      
+      }
+      .input_button_mediaCard {
+        margin: 0em;
+        padding: 0.5em;
+        width: 90%;
+        
+      }
+    
+    }
+  }

@@ -1,0 +1,85 @@
+$color-red: #fab9ab;
+$color-red-black: #a8341d;
+
+
+@mixin add-shadow-black{
+  border-radius: 9px 9px 9px 9px;
+  -webkit-box-shadow: 3px 5px 12px 10px #868585;
+  box-shadow: 3px 5px 12px 10px #868585;
+  }
+  @mixin add-shadow-white{
+    border-radius: 9px 9px 9px 9px;
+    -webkit-box-shadow: 3px 2px 12px 0px #e4d7d7;
+    box-shadow: 3px 2px 12px 0px #e4d7d7;
+    }  
+
+
+.signup_components {
+  background-color:  rgb(250, 235, 235);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @include add-shadow-white;
+  padding: 2em;
+  height: 300px;
+  max-width: 200px;
+  min-width: 150px;
+  margin: 1em;
+  .h2signup {
+   font-weight: 400;
+    font-size: 1.5em;
+  }
+  .form_signup {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .btnSignup {
+    background:$color-red-black;
+    padding: 1em;
+    color: aliceblue;
+    margin-top: 1em;
+  }
+  .btnSignup:hover {
+    transform: scale(1.05);
+  }
+  .btnSignup:active {
+    background:$color-red-black;
+    text-align: center;
+    @include add-shadow-black;
+    list-style-type: none;
+  }
+  .btnType {
+  //  @include add-shadow-white;
+    padding: 0.5em;
+  }
+  .btnType:hover {
+    transform: scale(1.03);
+  }
+}
+.active-btn {
+  background-color:  $color-red;
+  color: aliceblue;
+  text-align: center;
+  font-size: 1.2em;
+  @include add-shadow-black;
+  padding: 0.5em;
+  width: 20%;
+  list-style-type: none;
+  margin: 0.2em;
+}
+.ul_liSignUpForm li {
+  background-color:  $color-red;
+  color: black;
+  text-align: center;
+  font-size: 1.2em;
+  @include add-shadow-black;
+  padding: 0.5em 0 0.5em 0;
+  width: 100%;
+  min-width: 110px;
+  max-width: 180px;
+  list-style-type: none;
+  margin-bottom: 20px;
+  margin-left: 2px;
+}

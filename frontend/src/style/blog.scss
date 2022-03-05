@@ -1,0 +1,191 @@
+$color-red: #fce4df;
+$color-red-white:rgb(247, 235, 233);
+@mixin add-shadow-black{
+  border-radius: 9px 9px 9px 9px;
+  -webkit-box-shadow: 3px 5px 12px 10px #b4afaf;
+  box-shadow: 3px 5px 12px 10px #b4afaf;
+}
+  @mixin add-shadow-white{
+    border-radius: 9px 9px 9px 9px;
+    -webkit-box-shadow: 3px 2px 12px 0px #e4d7d7;
+    box-shadow: 3px 2px 12px 0px #e4d7d7;
+    }  
+    @mixin background-general{
+     background-image: linear-gradient(rgba(248, 164, 148, 1), rgb(243, 236, 234));
+
+    }
+.section_blog {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
+  max-width:800vw ;
+  padding: 5em 2em;
+  margin-top: 0px;
+  background-color: #f4f9fa;
+  box-shadow: 3px 2px 12px 0px #131212;
+  background-image: url("../images/body-background.jpg"); 
+  background-repeat: repeat-y;
+  .blog_container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-size: 1em;
+    margin-top: 680px;
+    border-radius: 100px;
+    max-height: 80px;
+    width: 70%;
+    text-align: center;
+  //  @include add-shadow-black;
+    @include  background-general;
+    
+  }
+  .container_blog_mediaCard {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+        border-radius: 15px;
+        background-color: rgb(27, 27, 27);
+     //   background-image: linear-gradient(rgba(248, 164, 148, 0.4), rgba(243, 236, 234, 0.1)),
+      //  url("../images/icon-left-font-long.png" );
+        object-fit: cover;
+      //  @include add-shadow-black;
+        margin-top: 100px;
+        padding-top: 50px;
+       
+    
+       & .btnDeleteAndMofified_mediaCard_container {
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly;
+         @include add-shadow-black;
+         width: 90%;
+         padding-left: 15px;
+         height: 50px;
+         margin: 12px auto;
+      
+         & .btn_btnDeletePost {
+          border: solid 2px rgb(167, 163, 163);
+          padding: 0.2em;
+       //   background-image: linear-gradient(rgba(248, 164, 148, 0.8), rgba(243, 236, 234, 0.2)),
+      //  //  url("../images/icon-left-font-long.png" );
+        }
+        & .btn_btnDeletePost:hover {
+           transform: scale(1.1);
+         //   background-image: linear-gradient(rgba(240, 98, 70, 0.8), rgba(243, 236, 234, 0.2)),
+         //  url("../images/icon-left-font-long.png" );
+        }
+       }
+  }
+
+  .h1blog {
+    font-weight: 400;
+    padding: 1.5em;
+    font-size: 1.2em;
+  }
+  .message_notConnectBlog {
+    padding: 2em;
+    @include add-shadow-black;
+    & p {
+      font-size: 1.5em;
+    }
+  }
+  .CartContent_title_content {
+    min-height: 200px;
+  }
+ 
+
+}
+
+@media screen and (max-width: 755px){
+  .section_blog .form_mediaCard {
+//    width: 90% !important ;
+    margin-top: 230px !important;
+  }
+  .blog_container {
+ //   width: 60vw!important;
+    font-size: 0.8em !important;
+    margin-top: 600px !important;
+  }
+  .div_mediaCard_container {
+    border: black 1px solid !important;
+    max-width:350px !important;
+  
+  }
+  .container_blog_mediaCard {
+    padding: 30px!important;
+    border: black 1px solid !important;
+  }
+}
+
+/*
+@media screen and (max-width:450px){
+  .section_blog .form_mediaCard {
+   // width: 90% !important ;
+    margin-top: 210px !important;
+  }
+  .blog_container {
+  //  width: 60vw!important;
+    font-size: 0.55em !important;
+    margin-top: 560px !important;
+   
+  }
+ 
+  .container_blog_mediaCard {
+  //  padding: 30px!important;
+  //  width: 80%;
+    margin-top: 4em !important;
+  }
+  
+
+}
+.div_mediaCard_container {
+  border: rgb(17, 16, 16) 1px solid !important;
+  max-width:280px !important;
+  margin-top: 0 !important;
+//  width: 100%;
+}
+
+
+@media screen and (max-width:350px){
+  .section_blog .form_mediaCard {
+    width: 90% !important ;
+    margin-top: 210px !important;
+  }
+  .blog_container {
+    width: 60vw!important;
+    font-size: 0.55em !important;
+    margin-top: 560px !important;
+  
+  }
+  .div_mediaCard_container {
+    border: rgb(236, 4, 4) 1px solid !important;
+  //  max-width:280px !important;
+    margin-top: 0 !important;
+  //  width: 100%;
+  }
+  .container_blog_mediaCard {
+    padding: 30px!important;
+  //  width: 80%;
+    margin-top: 4em !important;
+  }
+  
+  .makeStyles-media-2 {
+    height: 120px !important;
+  }
+ 
+  .MuiTypography-h5 {
+    font-size: 1.2em !important;
+   
+}
+
+.CartContent_title_content {
+  height: 1px!important;
+ 
+}
+
+}
+*/
