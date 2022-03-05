@@ -12,7 +12,6 @@ $color-red: #f8340c;
     }  
 .signin_profil {
     display: flex;
-  
     column-gap: 100px;
     justify-content: flex-start;
     align-items: center;
@@ -29,8 +28,7 @@ $color-red: #f8340c;
         background-image: linear-gradient(rgba(248, 164, 148, 0.8), rgba(243, 236, 234, 0.2)),
         url("../images/icon-left-font-long.png" );
     }
-        .content_profil_input {
-          
+        .content_profil_input {  
             padding: 0em;
             background-color: rgb(240, 224, 224);
             @include add-shadow-black;
@@ -54,29 +52,23 @@ $color-red: #f8340c;
             color: black;
             font-size: 1em;
         }
-        @media screen and (max-width: 600px) {
-            
-            .content_profil_input {
-             
-                margin: 0.5em;
-                
-            }
-          }
-          @media screen and (max-width: 400px) {
-            .upload_img_profil {
-              font-size: 0.7em;
-                margin-top: 0 !important;
-            }
-            .content_profil_input {
-                margin: 0.2em;
-            }
-        
-          } 
-    
-    
-
-
+     
+      
 }
-
-
-
+@media screen and (max-width: 400px) {
+  .upload_img_profil {
+    font-size: 0.7em;
+      margin-top: 0 !important;
+      
+  }
+  .content_profil_input {
+    font-size: 0.4em !important;
+    border: solid 1px black !important;
+  } 
+} 
+@media screen and (max-width: 300px) {
+  .content_profil_input {
+    font-size: 0.4em !important;
+    border: solid 1px black !important;
+}
+}
