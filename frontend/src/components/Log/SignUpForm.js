@@ -12,11 +12,12 @@ const SignUpForm = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     const email_regex =
-      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    /^(?!\s*$).+/;
     //*******************  REGEX PASSWORD
     const password_regex =
-    /^(?!\s*$).+/
-     /* /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{4,}$/;*/
+    /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{4,}$/;
+
+
     const testPassword = password_regex.test(password);
     const testEmail = email_regex.test(email);
     const passwordError = document.getElementById("passwordError");
@@ -155,7 +156,7 @@ const SignUpForm = () => {
           placeholder="confirmer le mot de passe"
           required
         />
-        <div className="confirmPassword error"></div>
+        <div className="passwordError"></div>
 
       
 

@@ -1,5 +1,5 @@
 $color-red: #fd2b01;
-$color-red-white:rgba(230, 43, 6, 0.8);
+$color-red-white: rgba(230, 43, 6, 0.8);
 
 @mixin add-shadow-black {
   border-radius: 9px 9px 9px 9px;
@@ -12,83 +12,66 @@ $color-red-white:rgba(230, 43, 6, 0.8);
   box-shadow: 3px 2px 12px 0px #e4d7d7;
 }
 
-
-
 .container_comment {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  padding: 0.5em;
+  row-gap: 1em;
+  margin: auto;
+  height: auto;
+  text-align: center;
+  @include add-shadow-black;
+  .comment_textArea {
     display: flex;
-    flex-direction: column;
-    width: 900px;
-    padding: 0.5em;
-    row-gap: 1em;
-    margin:auto;
-    height: auto;
-    text-align: center;
-    @include add-shadow-black;
-    .comment_textArea {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        width: 80%;
-        height: 50px;
-        
-    }
-    .button_comment {
-      display: flex;
-      justify-content: space-around;
-      
-    }
-    & input {
-        background-color: $color-red;
-        color: white;
-    }
-   
-    }
-@media screen and (max-width: 1050px){
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 50px;
+  }
+  .button_comment {
+    display: flex;
+    justify-content: space-around;
+  }
+  & input {
+    background-color: $color-red;
+    color: white;
+  }
+}
+@media screen and (max-width: 1050px) {
   .container_comment {
     width: 500px;
     margin: auto;
   }
-  @media screen and (max-width: 650px){
+  @media screen and (max-width: 650px) {
     .container_comment {
       padding: 1em;
       width: 300px;
       margin: auto;
       margin-top: 12em !important;
-    }  
+    }
   }
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 480px) {
     .container_comment {
       width: 100% !important;
       margin: auto;
       padding: 0em;
-   
     }
     .comment_textArea {
-   
       width: 100% !important;
       height: 100px !important;
-  
-      
+    }
   }
-
-
-  }
-  @media screen and (max-width: 350px){
+  @media screen and (max-width: 350px) {
     .container_comment {
       width: 100% !important;
       margin: auto;
       padding: 0em;
-   
     }
     .comment_textArea {
-   
       width: 100% !important;
       height: 100px !important;
-  
-      
-  }
-
-
+    }
   }
 }
