@@ -89,7 +89,7 @@ export const Profil = () => {
                   <div class="circle"></div>
                 </>
               )}
-              {!userProfile && <h3>Mettre à jour votre bio</h3>}
+              {!userProfile && <h3></h3>}
               {updateForm && (
                 <>
                   <TextareaAutosize

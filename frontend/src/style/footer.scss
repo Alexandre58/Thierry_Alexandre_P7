@@ -17,6 +17,8 @@ $color-red-white:rgba(230, 43, 6, 0.8);
 
 
 .footer {
+  position: fixed;
+  bottom: 0;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
