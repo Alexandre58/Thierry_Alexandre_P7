@@ -5,7 +5,8 @@
 
 
 --------------------- 
-## Précision sur les modules utilisés. Attention de bien respecter la version de chaque modules.
+
+## Précision sur les modules utilisés. Attention à bien respecter la version de chaque modules.
 
 * Le backend a été réalisé avec nodejs version v16.13.0, express, sequelize, sequelize/cli, sql2.
 
@@ -15,25 +16,39 @@
 
 * Il peut être utile de vérifier les modules dans le fichier package.json pour installer les packages manquants.
 
----------------------
-## Routes backend
+* Merci de bien vouloir créer dans le backend un dossier config puis un fichier config.js et de noter vos informations personnelles.
 
-* Les routes utilisées pour la réalisation du projet sont listées dans le powerPoint joint au dossier.
+* exemple du fichier à configurer dans le config.js
+
+* {
+  "development": 
+    {
+    "username": "root",
+    "password": "root",
+    "database": "mybase",
+    "host": "localhost",
+    "dialect": "mysql",
+    "dialectOptions": {
+    "charset": "utf8_general_ci"
+    },
+    "port": 8889
+    }
+}
 
 ----------------------
 ## Quelques informations utiles
 
-* Veillez décompresser l'archive reçue ou faire un git clone.
+* Veillez faire un git clone du projet ci-dessous.
 
-* Veillez bien prendre la branch devSoutenance :
+* https://github.com/Alexandre58/Thierry_Alexandre_P7.
 
-* https://github.com/Alexandre58/ThierryAlexandre_P7/tree/devSoutenance
+* Installer les bonnes versions de node (comme expliqué dans le premier paragraphe).
 
 * Dans le terminal intégré , ce placer dans le backend (npm install) et commande nodemon server.
 
 * Dans le terminal intégré , ce placer dans le frontend (npm install) et commande npm start.
 
-* Dans phpMyAdmin (ou autre) créer une base de donnée(nom) et importer la base de donnée qui se trouve dans le dossier backend => Database => mybase.sql.
+* Dans phpMyAdmin (dans mon cas) créer une base de donnée(nom) et importer la base de donnée qui se trouve dans le dossier backend => Database => mybase.sql.
 
 * Changer le port et users password dans le fichier config => config.json pour la connexion correct à votre base de donnée.
 
@@ -43,9 +58,10 @@
 
 ## frontend 
 
-*  REACT_APP_API_URL= http://localhost:4000
+*  REACT_APP_API_URL= http://localhost:4000 
 
 * Les Packages utilisés:
+
 * { "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@material-ui/core": "^4.12.3",
