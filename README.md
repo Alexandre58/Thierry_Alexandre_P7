@@ -54,6 +54,8 @@
 
 * Un fichier .env.example a étais créé pour faciliter la gestion du point .env, renomer ou créer un fichier .env et rentrer vos données .(j'ai mis les codes ici pour facilité la mise en place pour la soutenance, ces codes seront éffacés par la suite).
 
+* créer un dossier images
+
 --------------------------------------------
 
 ## frontend 
